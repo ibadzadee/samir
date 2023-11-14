@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px 50px;
+    background: url(https://image.cnbcfm.com/api/v1/image/105232079-2018-Chevrolet-Camaro-ZL1-033.jpg?v=1679502991&w=1920&h=1080);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+    gap: 20px;
+}
+body.open{
+    backdrop-filter: blur(20px);
+}
+
+.alert{
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    transition: all .5s ease;
+    transform: scale(0);
+}
+.alert.open{
+    transform: scale(1);
+}
+button{
+    border: none;
+    outline: none;
+    background: rgb(0, 89, 255);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+button:active{
+    transform: scale(.95);
+}
+span{
+    font-size: 30px;
+}
